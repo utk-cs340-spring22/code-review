@@ -8,6 +8,8 @@ by describing in detail the dos and don'ts of writing C++ code . These
 rules exist to keep the code base manageable while still allowing coders 
 to use C++ language features productively."
 
+The style guide targets the reader of the code more than the writer
+
 1. files
 In general, every .c or .cc file should have an associated .h file. 
 There are some common exceptions, such as unit tests and small .c or .cc 
