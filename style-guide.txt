@@ -131,13 +131,14 @@ Single line comments may be any of the following:
 
 
 9. Comments at the start of functions
-Almost every function declaration should have comments immediately preceding 
+Function declarations should have comments immediately preceding 
 it that describe what the function does and how to use it.
 
 /* 
  * All major routines should have a comment briefly describing what 
  * they do.  The comment before the "main" routine should describe 
- * what the program does. 
+ * what the program does. The comment should use the format of
+ * multi-line or VERY important comment shown above.
  */
 int main(int argc, char *argv[])
 {
@@ -227,32 +228,24 @@ if (condition) {   // no spaces inside parentheses, space before brace
 }
 
 
-15. Loops and Switch Statements 
-Switch statements may use braces for blocks. Annotate non-trivial fall-through 
-between cases. Braces are optional for single-statement loops. Empty loop 
-bodies should use either empty braces or continue. 
-
-case blocks in switch statements can have curly braces or not, depending on 
-your preference. If you do include curly braces they should be placed as 
-shown below. 
+15. Switch Statements 
+Switch statements may use braces for blocks. Case blocks in switch statements can have curly braces or not, depending on 
+your preference.
 
 If not conditional on an enumerated value, switch statements should always 
 have a default case (in the case of an enumerated value, the compiler will 
 warn you if any values are not handled). If the default case should never 
-execute, treat this as an error. For example:  
+execute, treat this as an error. Indentation should be as follows:  
 
 switch (var) {
-    case 0: {  // 4 space indent
-        ...      // 8 space indent
+    case 0:  // 4 space indent
+        ...  // 8 space indent
         break;
-    }
-    case 1: {
+    case 1:
         ...
         break;
-    }
-    default: {
+    default:
         assert(false);
-    }
 }
 
 
@@ -281,73 +274,7 @@ return (value);                // You wouldn't write var = (value);
 return(result); 
 
 
-18. Preprocessor Directives 
-The hash mark that starts a preprocessor directive should always be at the 
-beginning of the line. 
-
-Even when preprocessor directives are within the body of indented code, 
-the directives should start at the beginning of the line. 
-
-// Good - directives at beginning of line
-  if (lopsided_score) {
-#if DISASTER_PENDING      // Correct -- Starts at beginning of line
-      DropEverything();
-# if NOTIFY               // OK but not required -- Spaces after #
-      NotifyClient();
-# endif
-#endif
-      BackToNormal();
-  }
-
-// Bad - indented directives
-  if (lopsided_score) {
-      #if DISASTER_PENDING  // Wrong!  The "#if" should be at beginning of line
-      DropEverything();
-      #endif                // Wrong!  Do not indent "#endif"
-      BackToNormal();
-  }
-
-
-19 horizontal whitespace
-general:
-int i = 0;  // Two spaces before end-of-line comments.
-
-void f(bool b) {  // Open braces should always have a space before them.
-  ...
-int i = 0;  // Semicolons usually have no space before them.
-// Spaces inside braces for braced-init-list are optional.  If you use them,
-// put them on both sides!
-int x[] = { 0 };
-int x[] = {0};
-
-// Spaces around the colon in inheritance and initializer lists.
-class Foo : public Bar {
- public:
-  // For inline function implementations, put spaces between the braces
-  // and the implementation itself.
-  Foo(int b) : Bar(), baz_(b) {}  // No spaces inside empty braces.
-  void Reset() { baz_ = 0; }  // Spaces separating braces from implementation.
-  ...
-
-loops and conditionals:
-if (b) {          // Space after the keyword in conditions and loops.
-} else {          // Spaces around else.
-}
-while (test) {}   // There is usually no space inside parentheses.
-switch (i) {
-for (int i = 0; i < 5; ++i) {
-// Loops and conditions may have spaces inside parentheses, but this
-// is rare.  Be consistent.
-switch ( i ) {
-if ( test ) {
-for ( int i = 0; i < 5; ++i ) {
-// For loops always have a space after the semicolon.  They may have a space
-// before the semicolon, but this is rare.
-for ( ; i < 5 ; ++i) {
-  ...
-
-
-20. Function prototypes 
+18. Function prototypes 
 Function prototypes for private functions (i.e., functions not used elsewhere) 
 go at the top of the first source module. In the kernel, private functions 
 do not require a prototype as long as they are defined before they are used. 
@@ -369,12 +296,12 @@ not:
 voidfunction(int a); 
 
 
-21. unsigned ints 
+19. unsigned ints 
 When defining unsigned integers use 'unsigned int' rather than 
 just 'unsigned'; the latter has been a source of confusion in the past. 
 
  
-22. Exit code
+20. Exit code
 Exits should be 0 on success, or non-zero for errors. 
 
 /* 
@@ -384,7 +311,7 @@ Exits should be 0 on success, or non-zero for errors.
 exit(0); 
 
  
-23. Register
+21. Register
 Use of the 'register' specifier is discouraged in new code. Optimizing 
 compilers such as gcc can generally do a better job of choosing which 
 variables to place in registers to improve code performance. 
