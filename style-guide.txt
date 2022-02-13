@@ -26,10 +26,10 @@ To guarantee uniqueness, they should be based on the full path in a project's
 source tree. For example, the file foo/src/bar/baz.h in project foo should 
 have the following guard: 
 
-#ifndef CODE_REVIEW_UUENCODE_H 
-#define CODE_REVIEW_UUENCODE_H
+#ifndef CODE_REVIEW_UU_H 
+#define CODE_REVIEW_UU_H
 ...
-#endif  /* CODE_REVIEW_UUENCODE_H */ 
+#endif  /* CODE_REVIEW_UU_H */ 
 
 
 3. null
