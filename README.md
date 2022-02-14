@@ -5,8 +5,7 @@ Use the style guide in the file named style-guide.txt.
 Identify and fix the issues in the source code files that violate the
 style guide. There are 2 parts to this assignment:
 
-1. Identify the issues and the fix:
-
+1. Identify the issues and the fix:  
 Create a file named issues.txt to identify the issues. In that file, give the
 filename, line number, and a very short description of the issue and the fix.
 List the issues in the order they appear in the file and group issues in 
@@ -22,8 +21,7 @@ Note that you don't have to give much detail about how to fix it; the
 main point of a code review is to find the problems not fix them. But it
 is helpful to list the fix if it is known (which they will be in our case).
 
-2. Fix the Issues:
-
+2. Fix the Issues:  
 Modify the files in the repo to fix all of the issues identified when you 
 reviewed the code. Make sure the code compiles and links with no warnings 
 or errors using the Makefile. Note that the Makefile will need minor
