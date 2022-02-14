@@ -31,24 +31,23 @@ This has been tested on Linux and FreeBSD. It may work on other platforms,
 but it is recommend that you use one of these two.
 
 Turn in the assignment using the following instructions:
-a. Copy the files from the code-review repo listed above.
-b. Create a new txt file named issues.txt as described above.
-c. Modify the source code files and Makefile to correct the issues.
-d. Create a private repo (important: make sure it is private) in your
+- Copy the files from the code-review repo listed above.
+- Create a new txt file named issues.txt as described above.
+- Modify the source code files and Makefile to correct the issues.
+- Create a private repo (important: make sure it is private) in your
    own git hub acccount. Place the fixed files (including the Makefile)
    and issues.txt in your repo.
-e. Give read permission to the TAs and myself. The github ids are
+- Give read permission to the TAs and myself. The github ids are
    davidalanreid, dlee865, and vvbhupatijraju.
-f. Open an issue in the utk-cs340-spring22/code-review repo when finished
+- Open an issue in the utk-cs340-spring22/code-review repo when finished
    and just put a note in the issue saying that your assignment 3 is finished.
 
 There are at least 35 issues in the code. Grading will be as follows:
-1 point for each issue found up to 35 points.
-1 point for each issue fixed up to 35 points.
-20 points if it compiles and links without errors using the Makefile.
-10 points if it compiles with no warnings using the Makefile.
----
-100 points total
+- 1 point for each issue found up to 35 points.
+- 1 point for each issue fixed up to 35 points.
+- 20 points if it compiles and links without errors using the Makefile.
+- 10 points if it compiles with no warnings using the Makefile.
+- 100 points total
 
 Reminder: There is a 10% per day late penalty for late work. No credit is
 given after 10 days.
