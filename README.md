@@ -38,7 +38,8 @@ Turn in the assignment using the following instructions:
    own git hub acccount. Place the fixed files (including the Makefile)
    and issues.txt in your repo.
 - Give read permission to the TAs and myself. The github ids are
-   davidalanreid, dlee865, and vvbhupatijraju.
+   davidalanreid, dlee865, and vvbhupatijraju. To give read permission,
+   select settings->Collaborators->Add People in your repo.
 - Open an issue in the utk-cs340-spring22/code-review repo when finished
    and just put a note in the issue saying that your assignment 3 is finished.
 
