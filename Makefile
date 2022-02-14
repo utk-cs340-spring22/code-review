@@ -3,19 +3,16 @@ all: myencode
 main.o: main.c main.h
 	cc -Wall -c -o main.o main.c
 
-base64.o: base64.c
-	cc -Wall -c -o base64.o base64.c
+Base64.o: Base64.c
+	cc -Wall -c -o Base64.o Base64.c
 
-uuencode.o: uuencode.c
-	cc -Wall -c -o uuencode.o uuencode.c
+uu.o: uu.c main.h
+	cc -Wall -c -o uu.o uu.c
 
-uudecode.o: uudecode.c
-	cc -Wall -c -o uudecode.o uudecode.c
-
-myencode: main.o base64.o uuencode.o uudecode.o 
-	cc -o myencode main.o uuencode.o uudecode.o base64.o
+myencode: main.o Base64.o uu.o
+	cc -o myencode main.o uu.o Base64.o
 
 
 clean:
-	-rm -f main.o myencode
-	-rm -f uu uuencode.o uudecode.o base64.o
+	-rm -f myencode
+	-rm -f main.o uu.o Base64.o
