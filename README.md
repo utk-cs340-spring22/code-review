@@ -1,4 +1,4 @@
-# Assignment 3: Code Review
+# Assignment 3: Code Review (Due Monday 2/21)
 
 Review the source code in the repo github.com/utk-cs340-spring22/code-review. 
 Use the style guide in the file named style-guide.txt. 
