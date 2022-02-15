@@ -20,6 +20,12 @@ in which case you can just list the first line. Or it may pertain to
 a whole file, in which case you can say something like:   
   > Base64.c: all indentations should be changed from 2 spaces to 4 spaces.
 
+In come cases, there is a block of code that is wrong, for example, the
+indentation may be wrong. List the block as 1 item with the line number of
+the first bad line. Do not list as one bad item per line. For example, if
+all the cases in a switch statement are indented wrong, list that as one
+item like this:
+  > main.c line 51 and following: indentation is wrong on case statements.
 
 Note that you don't have to give much detail about how to fix it; the
 main point of a code review is to find the problems not fix them. But it
