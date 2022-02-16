@@ -42,7 +42,7 @@ This has been tested on Linux and FreeBSD. It may work on other platforms,
 but it is recommended that you use one of these two.
 
 **Turn in the assignment using the following instructions:**
-- Copy the files from the code-review repo listed above. You can clone or fork the repo, but you will need to create a new private repo to place your finished work. Note that forking results in a fork that is readable by everyone else in the class, even if it is private.
+- Copy the files from the code-review repo listed above. You can clone or fork the repo, but you will need to create a new private repo to place your finished work. Note that forking results in a fork that is readable by everyone else in the class, even if it is private. You need to create a repo that is not readable by anyone other than the TAs and prof.
 - Create a new text file named issues.txt as described above.
 - Modify the source code files and Makefile to correct the issues.
 - Create a private repo (important: make sure it is private) in your
